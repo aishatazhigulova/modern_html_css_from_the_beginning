@@ -1,0 +1,13 @@
+/* Align icon to the left */
+#what .items .item {
+    display: flex;
+    text-align: left;
+}
+
+/* Position icons */
+
+#what .items .item ion-icon {
+    margin-right: 1.3rem;
+    align-self: center;
+    margin-bottom: 0;
+}

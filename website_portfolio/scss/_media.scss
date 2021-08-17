@@ -1,0 +1,159 @@
+// Tablets and Smaller
+@media (max-width: 800px) {
+    #header-home {
+        height: 30rem !important;
+        
+
+        .header-content {
+            padding-top: 5rem;
+        }
+    
+    
+    }
+}
+
+
+// Smartphones
+@media (max-width: 500px) {
+    #main-nav {
+        flex-direction: column;
+        align-items: center;
+
+
+        li {
+            padding: 1rem;
+        }
+    }
+
+
+    #header {
+        &-home {
+            height: 10rem !important;
+            border-bottom: 3px solid $main-color;
+            background-position: 20% 30% !important;
+
+
+            .header-content {
+                display: none;
+            }
+        }
+
+
+        &-inner {
+            height: 10rem !important;
+        }
+    }
+
+
+    // Display flex column
+    #home-a .specials,
+    #home-b .stats,
+    #home-c .process,
+    #about-a .about-info,
+    #about-a .awards,
+    #about-d .testimonials,
+    #contact-b .contact-info {
+        flex-direction: column;
+    }
+
+    #main-footer {
+
+        .footer-content {
+            flex-direction: column;
+            padding: 1rem;
+        }
+    
+    }
+
+
+    
+    .item {
+        flex-basis: 100%;
+    }
+
+
+    #home {
+        &-a {
+            .specials div {
+                border-bottom: 1px solid $light-color;
+                padding: 1rem;
+
+
+                &:last-child {
+                    border: none;
+                    padding-bottom: 0;
+                }
+            }
+        }
+
+
+        &-b {
+            .stats div {
+                padding: 2rem 0 1rem 0;
+            }
+        }
+    }
+    
+
+
+    #about-c {
+        display: none;
+
+
+        .award-1 {
+            padding-bottom: 1rem;
+        }
+    }
+
+
+    #contact {
+
+        &-b {
+            .contact-info div {
+                margin-bottom: 1rem;
+                padding-bottom: 1rem;
+                border-bottom: 1px solid #555;
+    
+    
+                &:last-child {
+                    margin-bottom: 0;
+                    padding-bottom: 1rem;
+                    border-bottom: 0;
+                }
+            }
+        }
+
+
+        &-c {
+           h1 {
+            font-size: 1.2rem;
+           } 
+        }
+        
+    }
+
+}
+
+
+
+// Landscape
+@media (max-height: 580px) {
+    #header-home {
+        .header-content {
+            padding-top: 3rem !important;
+        }
+    }
+}
+
+
+
+// Landscape
+@media (max-height: 330px) {
+    #header-home {
+        .header-content {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+}
